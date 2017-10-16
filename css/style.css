@@ -1,3 +1,63 @@
 body {
   margin-top: 100px;
+  font-family: 'PT Sans', sans-serif;
+}
+.navbar-default {
+    background-color: #ffffff;
+    border-color: #f1f1f1;
+}
+.navbar-default .navbar-nav>.active>a, .navbar-default .navbar-nav>.active>a:focus, .navbar-default .navbar-nav>.active>a:hover {
+    color: #2f2f2f;
+    background-color: transparent;
+}
+.navbar-default .navbar-nav>li>a, .navbar-default .navbar-nav>li>a:focus, .navbar-default .navbar-nav>li>a:hover {
+    color: #2f2f2f;
+    background-color: transparent;
+}
+.navbar-default .navbar-nav>.open>a, .navbar-default .navbar-nav>.open>a:focus, .navbar-default .navbar-nav>.open>a:hover {
+    color: #2f2f2f;
+    background-color: transparent;
+}
+.navbar-nav>li>.dropdown-menu {
+    margin-top: -5px;
+}
+.dropdown-menu {
+  box-shadow: none;
+  padding: 0px;
+  margin: 2px 0 0;
+  border: 0;
+  box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.26);
+  border-radius: 4px;
+  overflow: hidden;
+}
+.dropdown-menu li a {
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+
+/*Main Banner*/
+
+.main-banner {
+  font-family: 'Yanone Kaffeesatz', sans-serif;
+  font-size: 35px;
+  padding: 20px 50px 50px 50px;
+}
+
+/*Widget*/
+
+.widget .title {
+  font-size: 25px;
+  margin-bottom: 20px;
+}
+
+/*Progress Bars*/
+
+.progress.progress-line-primary {
+    background: rgba(156, 39, 176, 0.2);
+}
+.progress {
+    height: 4px;
+    border-radius: 0;
+    box-shadow: none;
+    background: #DDDDDD;
 }
