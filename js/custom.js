@@ -4,11 +4,16 @@ $(document).ready(function(){
   });
   kissuiScrollAnim.add(document.getElementById('specialelement'), {
       'in': 'fadeIn',
-      'middle': 'pulse'
+      'middle': 'pulse',
+      'autoReset': true,
+      'triggerOnInit': false
   });
 });
 $(document).ready(function() {
     $('.progress .progress-bar').progressbar({
         transition_delay: 10
+    });
+    $('#myTabs li a').click(function(){
+
     });
 });

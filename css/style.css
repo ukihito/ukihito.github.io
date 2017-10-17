@@ -56,6 +56,9 @@ body {
   padding: 0px;
   margin: 0px 0px 20px 0px;
 }
+.default-wallbox img {
+  width: 100%;
+}
 /*Widget*/
 
 .widget .title {
@@ -100,4 +103,11 @@ body {
   border-radius: 6px;
   padding: 20px;
   margin-bottom: 20px;
+}
+
+/*Footer*/
+
+.footer {
+  border-top: 1px solid #e4e4e4;
+  height: 100px;
 }
