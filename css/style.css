@@ -2,20 +2,20 @@ body {
   margin-top: 100px;
   font-family: 'PT Sans', sans-serif;
 }
-.navbar-default {
-    background-color: #ffffff;
-    border-color: #f1f1f1;
+.navbar, .navbar.navbar-default {
+    background-color: #001e92;
+    color: #fff;
 }
 .navbar-default .navbar-nav>.active>a, .navbar-default .navbar-nav>.active>a:focus, .navbar-default .navbar-nav>.active>a:hover {
-    color: #2f2f2f;
+    color: #fff;
     background-color: transparent;
 }
 .navbar-default .navbar-nav>li>a, .navbar-default .navbar-nav>li>a:focus, .navbar-default .navbar-nav>li>a:hover {
-    color: #2f2f2f;
+    color: #fff;
     background-color: transparent;
 }
 .navbar-default .navbar-nav>.open>a, .navbar-default .navbar-nav>.open>a:focus, .navbar-default .navbar-nav>.open>a:hover {
-    color: #2f2f2f;
+    color: #fff;
     background-color: transparent;
 }
 .navbar-nav>li>.dropdown-menu {
@@ -43,6 +43,19 @@ body {
   padding: 20px 50px 50px 50px;
 }
 
+/*Wall*/
+
+.default-wallbox {
+  border-radius: 6px;
+  box-shadow: 0 16px 24px 2px rgba(0, 0, 0, 0.14), 0 6px 30px 5px rgba(0, 0, 0, 0.12), 0 8px 10px -5px rgba(0, 0, 0, 0.2);
+  background-color: #fff;
+  padding: 20px;
+  margin-bottom: 30px;
+}
+.default-wallbox h1 {
+  padding: 0px;
+  margin: 0px 0px 20px 0px;
+}
 /*Widget*/
 
 .widget .title {
@@ -50,14 +63,41 @@ body {
   margin-bottom: 20px;
 }
 
-/*Progress Bars*/
+/*Tabs*/
 
-.progress.progress-line-primary {
-    background: rgba(156, 39, 176, 0.2);
+.nav-tabs {
+    background: transparent;
+    border: 0px;
+    margin-bottom: 20px;
 }
-.progress {
-    height: 4px;
-    border-radius: 0;
-    box-shadow: none;
-    background: #DDDDDD;
+.nav-tabs>li.active>a, .nav-tabs>li.active>a:focus, .nav-tabs>li.active>a:hover {
+  background-color: transparent !important;
+  border: 0 !important;
+  color: #2f2f2f !important;
+  font-weight: 200;
+  text-align: left;
+  padding: 5px 10px 5px 0px;
+  font-size: 18px;
+}
+.nav-tabs > li > a, .nav-tabs > li > a:hover, .nav-tabs > li > a:focus {
+    background-color: transparent !important;
+    border: 0 !important;
+    color: #2f2f2f !important;
+    font-weight: 100;
+    text-align: left;
+    padding: 5px 10px 5px 0px;
+    font-size: 18px;
+}
+.nav-tabs>li {
+    text-align: left;
+    padding: 0px;
+}
+
+/*Made-Item*/
+
+.made-item {
+  background-color: #ffffff;
+  border-radius: 6px;
+  padding: 20px;
+  margin-bottom: 20px;
 }
