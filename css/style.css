@@ -64,6 +64,7 @@ body {
 .widget .title {
   font-size: 25px;
   margin-bottom: 20px;
+  text-align: center;
 }
 
 /*Tabs*/
@@ -96,6 +97,23 @@ body {
     padding: 0px;
 }
 
+/*Progress Bar*/
+
+.progress {
+    height: 4px;
+    border-radius: 0;
+    -webkit-box-shadow: none;
+    box-shadow: none;
+    background: #c8c8c8;
+}
+.progress-title {
+  text-align: center;
+  margin-bottom: 5px;
+  font-family: 'Yanone Kaffeesatz', sans-serif;
+  font-weight: 700;
+  color: rgba(25, 25, 25, 1);
+}
+
 /*Made-Item*/
 
 .made-item {
@@ -110,4 +128,109 @@ body {
 .footer {
   border-top: 1px solid #e4e4e4;
   height: 100px;
+}
+
+/*Shine icons*/
+
+.icon {
+  position: relative;
+  overflow: hidden;
+  width: 50px;
+  height: 50px;
+  display: inline-block;
+
+  margin: 25px 0 25px 25px;
+  border-radius: 5px;
+  color: #fff;
+  text-decoration: none;
+  text-align: center;
+  line-height: 50px;
+  font-size: 12px;
+  font-family: sans-serif;
+}
+
+.icon:nth-child(1) { background: cornflowerblue; }
+.icon:nth-child(2) { background: salmon; }
+.icon:nth-child(3) { background: gray; }
+
+.icon:after {
+
+  animation: shine 5s ease-in-out  infinite;
+  animation-fill-mode: forwards;
+  content: "";
+  position: absolute;
+  top: -110%;
+  left: -210%;
+  width: 200%;
+  height: 200%;
+  opacity: 0;
+  transform: rotate(30deg);
+
+  background: rgba(255, 255, 255, 0.13);
+  background: linear-gradient(
+    to right,
+    rgba(255, 255, 255, 0.13) 0%,
+    rgba(255, 255, 255, 0.13) 77%,
+    rgba(255, 255, 255, 0.5) 92%,
+    rgba(255, 255, 255, 0.0) 100%
+  );
+}
+
+/* Hover state - trigger effect */
+
+
+/* Active state */
+
+.icon:active:after {
+  opacity: 0;
+}
+
+@keyframes shine{
+  10% {
+    opacity: 1;
+    top: -30%;
+    left: -30%;
+    transition-property: left, top, opacity;
+    transition-duration: 0.7s, 0.7s, 0.15s;
+    transition-timing-function: ease;
+  }
+  100% {
+    opacity: 0;
+    top: -30%;
+    left: -30%;
+    transition-property: left, top, opacity;
+  }
+}
+
+/*Shine text*/
+
+.shine{
+    background: #1f1f1f -webkit-gradient(linear, left top, right top, from(#1f1f1f), to(#fff), color-stop(1, #f0f)) 0 0 no-repeat;
+    background-size: 10px 40px; -webkit-background-size: 10px 40px;
+    -moz-background-size: 10px 40px; -o-background-size: 10px 40px;
+    color: rgba(25, 25, 25, 1);
+    background-clip: text; -webkit-background-clip: text;
+        -moz-background-clip: text; -o-background-clip: text;
+	-webkit-animation: shine 10s infinite;
+	-moz-animation: shine 10s infinite;
+	-o-animation: shine 10s infinite;
+	-ms-animation: shine 10s infinite;
+	animation: shine 10s infinite;
+}
+
+@-webkit-keyframes shine{
+    0%{background-position: top left;}
+    100%{background-position: top right;}
+}
+@-moz-keyframes shine{
+    0%{background-position: top left;}
+    100%{background-position: top right;}
+}
+@-o-keyframes shine{
+    0%{background-position: top left;}
+    100%{background-position: top right;}
+}
+@keyframes shine{
+    0%{background-position: top left;}
+    100%{background-position: top right;}
 }
